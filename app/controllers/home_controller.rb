@@ -10,7 +10,9 @@ class HomeController < ActionController::Base
   	respond_to do |format|
 			 format.html {  }
 		 end
-
+	oauth = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET)
+    session[:signed_request] = oauth.parse_signed_request(params[:signed_request])
+    @a = session[:signed_request]['page']['liked']
 
   end
 
