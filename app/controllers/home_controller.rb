@@ -11,8 +11,8 @@ class HomeController < ActionController::Base
 			 format.html {  }
 		 end
 	# oauth = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET)
- #    session[:signed_request] = oauth.parse_signed_request(params[:signed_request])
- #    @a = session[:signed_request]['page']['liked']
+ 	# session[:signed_request] = oauth.parse_signed_request(params[:signed_request])
+ 	# @a = session[:signed_request]['page']['liked']
 
   end
 
@@ -25,6 +25,8 @@ class HomeController < ActionController::Base
 		 # auth established, now do a graph call:
 		  
 		@api = Koala::Facebook::API.new(session[:access_token])
+		@graph = @api.get_object("me")
+		@graph2 = @api.get_object("me", "friends")
 		begin
 			@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
 		rescue Exception=>ex
