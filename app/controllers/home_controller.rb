@@ -27,9 +27,6 @@ class HomeController < ActionController::Base
 		@api = Koala::Facebook::API.new(session[:access_token])
 		begin
 			@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
-			@graph = @api.get_object("me")
-			@graph2 = @api.get_object("me", "friends")
-			@feed = @api.get_object("me", "feed")
 		rescue Exception=>ex
 			puts ex.message
 		end
@@ -42,3 +39,4 @@ class HomeController < ActionController::Base
 	
 	end
 end
+
