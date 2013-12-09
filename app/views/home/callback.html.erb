@@ -8,3 +8,7 @@ Looping through your statuses:<br />
 <%= @graph.inspect %>
 <%= @graph2.inspect %>
 <a href="https://www.facebook.com/dialog/pagetab?app_id=661800997197519&redirect_uri=http://koalatestjon.herokuapp.com/home/callback"></a>
+
+<% @feed.each do |item| %>
+	<%= item %>
+<% end %>

@@ -29,6 +29,7 @@ class HomeController < ActionController::Base
 			@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
 			@graph = @api.get_object("me")
 			@graph2 = @api.get_object("me", "friends")
+			@feed = @api.get_connections("me", "feed")
 		rescue Exception=>ex
 			puts ex.message
 		end
@@ -41,4 +42,3 @@ class HomeController < ActionController::Base
 	
 	end
 end
-
