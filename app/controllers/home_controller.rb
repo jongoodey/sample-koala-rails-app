@@ -20,11 +20,12 @@ class HomeController < ActionController::Base
   	if params[:code]
   		# acknowledge code and get access token from FB
 		  session[:access_token] = session[:oauth].get_access_token(params[:code])
-		  @a = session[:access_token]['page']['liked']
+		  session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
 		end		
 
 		 # auth established, now do a graph call:
 		  
+		@a = session[:signed_request]['page']['liked']
 		@api = Koala::Facebook::API.new(session[:access_token])
 		begin
 			@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
