@@ -1,2 +1,3 @@
 <%= link_to 'Authenticate this Facebook app', @auth_url, :class=>"button"%>
-<%= params[:signed_request].inspect %>
+<% @x = parse_signed_request(params[:signed_request]) %>
+<%= @x.inspect %>
