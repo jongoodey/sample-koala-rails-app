@@ -8,6 +8,7 @@ class HomeController < ActionController::Base
 		  
 	session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
 	@a = session[:signed_request]['page']['liked']
+	@b = session[:signed_request]
 
 
   	respond_to do |format|
