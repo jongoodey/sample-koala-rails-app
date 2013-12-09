@@ -20,6 +20,7 @@ class HomeController < ActionController::Base
   	if params[:code]
   		# acknowledge code and get access token from FB
 		  session[:access_token] = session[:oauth].get_access_token(params[:code])
+		  @a = session[:access_token]['page']['liked']
 		end		
 
 		 # auth established, now do a graph call:
