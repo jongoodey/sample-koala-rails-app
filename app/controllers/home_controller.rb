@@ -9,7 +9,7 @@ class HomeController < ActionController::Base
 	session[:signed_request] = session[:oauth].parse_signed_request(params[:signed_request])
 	@a = session[:signed_request]['page']['liked']
 	@b = session[:signed_request]['user_id']
-
+	@c = session[:oauth].get_user_info_from_cookies(cookies)
 
   	respond_to do |format|
 			 format.html {  }
