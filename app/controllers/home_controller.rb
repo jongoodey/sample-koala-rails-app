@@ -6,9 +6,12 @@ class HomeController < ActionController::Base
 		@auth_url =  session[:oauth].url_for_oauth_code(:permissions=>"read_stream") 	
 		puts session.to_s + "<<< session"
 
+
   	respond_to do |format|
 			 format.html {  }
 		 end
+
+
   end
 
 	def callback
