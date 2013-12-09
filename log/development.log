@@ -1,0 +1,192 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:39:20 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (2.1ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-12-09 13:39:20 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:41:22 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:43:44 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.3ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?error=access_denied&error_code=200&error_description=Permissions+error&error_reason=user_denied" for 127.0.0.1 at 2013-12-09 13:43:49 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"error"=>"access_denied", "error_code"=>"200", "error_description"=>"Permissions error", "error_reason"=>"user_denied"}
+Rendered home/callback.html.erb within layouts/home (26.8ms)
+Completed 500 Internal Server Error in 15178ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: Looping through your statuses:<br />
+    2: <ul>
+    3: 
+    4: <% @graph_data.each do |status| %>
+    5: <%= status["message"] %> (<i><%=status["updated_time"]%></i>)<hr>
+    6: <% end %>
+    7: </ul>
+  app/views/home/callback.html.erb:4:in `_app_views_home_callback_html_erb__3089185766042100938_70054813565540'
+
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/home/callback?code=AQDDUus9TKTTJALB6TSorivVlaS-_5Eh9etY4lUmpNC7r3vbb9VTC76-zqfvdv5dKd0UP4wcvkbXl3OmACWRx7fGxZLlqCMdqYDWV0QWafZ9Zsq2v-IJkqmhpLYIfm3Fh1Ii51HWiPeatNND35GcTN7jvJ96qBl7MdzPHG2EnHX6GWUllMuXTmVkkh0-KluqtGnMtxgtGP2tDFb5IcodRsv9IhDiMfcngdEzJQ5kF41pGr0miWNT0D0aUW3hOMU-ifLUqB1UAHeX1a6o1yRXOHcfMWPeguoeDA1y_uF7EMI0uHxTIqYP8eb75R3KLLJXZkM" for 127.0.0.1 at 2013-12-09 13:44:05 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQDDUus9TKTTJALB6TSorivVlaS-_5Eh9etY4lUmpNC7r3vbb9VTC76-zqfvdv5dKd0UP4wcvkbXl3OmACWRx7fGxZLlqCMdqYDWV0QWafZ9Zsq2v-IJkqmhpLYIfm3Fh1Ii51HWiPeatNND35GcTN7jvJ96qBl7MdzPHG2EnHX6GWUllMuXTmVkkh0-KluqtGnMtxgtGP2tDFb5IcodRsv9IhDiMfcngdEzJQ5kF41pGr0miWNT0D0aUW3hOMU-ifLUqB1UAHeX1a6o1yRXOHcfMWPeguoeDA1y_uF7EMI0uHxTIqYP8eb75R3KLLJXZkM"}
+Rendered home/callback.html.erb within layouts/home (0.4ms)
+Completed 200 OK in 20681ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQDDUus9TKTTJALB6TSorivVlaS-_5Eh9etY4lUmpNC7r3vbb9VTC76-zqfvdv5dKd0UP4wcvkbXl3OmACWRx7fGxZLlqCMdqYDWV0QWafZ9Zsq2v-IJkqmhpLYIfm3Fh1Ii51HWiPeatNND35GcTN7jvJ96qBl7MdzPHG2EnHX6GWUllMuXTmVkkh0-KluqtGnMtxgtGP2tDFb5IcodRsv9IhDiMfcngdEzJQ5kF41pGr0miWNT0D0aUW3hOMU-ifLUqB1UAHeX1a6o1yRXOHcfMWPeguoeDA1y_uF7EMI0uHxTIqYP8eb75R3KLLJXZkM" for 127.0.0.1 at 2013-12-09 13:46:01 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQDDUus9TKTTJALB6TSorivVlaS-_5Eh9etY4lUmpNC7r3vbb9VTC76-zqfvdv5dKd0UP4wcvkbXl3OmACWRx7fGxZLlqCMdqYDWV0QWafZ9Zsq2v-IJkqmhpLYIfm3Fh1Ii51HWiPeatNND35GcTN7jvJ96qBl7MdzPHG2EnHX6GWUllMuXTmVkkh0-KluqtGnMtxgtGP2tDFb5IcodRsv9IhDiMfcngdEzJQ5kF41pGr0miWNT0D0aUW3hOMU-ifLUqB1UAHeX1a6o1yRXOHcfMWPeguoeDA1y_uF7EMI0uHxTIqYP8eb75R3KLLJXZkM"}
+Completed 500 Internal Server Error in 15276ms
+
+Koala::Facebook::APIError (OAuthException: This authorization code has been used.):
+  app/controllers/home_controller.rb:17:in `callback'
+
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/home/callback?code=AQDGtFhL0OmBySLrSjDWl96dn1L2fOP-EB6wnhaAgzmK197x3Lkn4K6mYRfEIdkfPmQF0KXfQChu7TVHN6h5faD45L6_hr2QRQWsmZqCMyIaBDGihAAtZffcutRKZOUTAaRQ4BxucqmbnTcOEJc-VlD8golIrOQdflV13TgBiMinU79SOqeWfchOXrfEPOwmlxIfuPgO4ODQnhxSE05ANqpzwueeCjHsnQpRyYetTbVvocHZC33SM6bnk9KJt-GciZ-QCZS-lLzW5oxqBuyS5b0X9cZN5fyHTm49KvDCkD4NRKvb03DNdiBII9Fnds8xnFo" for 127.0.0.1 at 2013-12-09 13:46:58 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQDGtFhL0OmBySLrSjDWl96dn1L2fOP-EB6wnhaAgzmK197x3Lkn4K6mYRfEIdkfPmQF0KXfQChu7TVHN6h5faD45L6_hr2QRQWsmZqCMyIaBDGihAAtZffcutRKZOUTAaRQ4BxucqmbnTcOEJc-VlD8golIrOQdflV13TgBiMinU79SOqeWfchOXrfEPOwmlxIfuPgO4ODQnhxSE05ANqpzwueeCjHsnQpRyYetTbVvocHZC33SM6bnk9KJt-GciZ-QCZS-lLzW5oxqBuyS5b0X9cZN5fyHTm49KvDCkD4NRKvb03DNdiBII9Fnds8xnFo"}
+Rendered home/callback.html.erb within layouts/home (1.5ms)
+Completed 200 OK in 20567ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQBamj8DLg9Z1U-eE21mkwvkvefK1pZQF6k3LAuCFjJTGirf-P54qD1Ok1riKDK4bcaOQixhK32Ea538B5mRDrFcmp9GAV9nNpKvW5gHZ5q4ijcLDcI_c0TvMpec-tzzdoggNuQI8_0BW6N8AmNNsm97uYAwc_Vlmt3JzLpIsxrdYsUBhBA6eH4gY9Y5Vm0lCgJS7V06768ibDb2VJ3U6VO4YxUw5SRo9tXhFbKO6sA5jFcudTWygopAh8WheiAMT1X2u30U2lr_MgeCMju4GdTXOHhwksTtBdFKfyjc44FYOhbYWb8-0xHAU6eVsttWWcE" for 127.0.0.1 at 2013-12-09 13:47:19 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQBamj8DLg9Z1U-eE21mkwvkvefK1pZQF6k3LAuCFjJTGirf-P54qD1Ok1riKDK4bcaOQixhK32Ea538B5mRDrFcmp9GAV9nNpKvW5gHZ5q4ijcLDcI_c0TvMpec-tzzdoggNuQI8_0BW6N8AmNNsm97uYAwc_Vlmt3JzLpIsxrdYsUBhBA6eH4gY9Y5Vm0lCgJS7V06768ibDb2VJ3U6VO4YxUw5SRo9tXhFbKO6sA5jFcudTWygopAh8WheiAMT1X2u30U2lr_MgeCMju4GdTXOHhwksTtBdFKfyjc44FYOhbYWb8-0xHAU6eVsttWWcE"}
+Rendered home/callback.html.erb within layouts/home (1.1ms)
+Completed 200 OK in 20396ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:48:24 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.1ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQCaM1HPoYnj8QX-0H0ihf_pwBK3TCDzWGhbqUGn2u0NQ7qbjEHf1H97vLzhSgk_45GzxF8M3B3ppYPTCFcTxOxogAt_g2ziUWIf1OQ4oN_Qq_p0jz0aff-x6PcY4tomozEBpto4xsoXYRg1s0LVeTxiieRkQWACubQDKHbRMlw8GAGP7bY2ylEew4BCnWfpVp-vmlMxoe55lO94didGNRZrHe2gf0qcuZTb5ZuwgEavL7FbTcG-KWidz4DerL2TZuIrLiEG5HUyZt0uMlAxPkB59S49X1VS2orqtu6S_NGsPujYnwAsAdnDRs3MsIi6VBI" for 127.0.0.1 at 2013-12-09 13:48:26 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQCaM1HPoYnj8QX-0H0ihf_pwBK3TCDzWGhbqUGn2u0NQ7qbjEHf1H97vLzhSgk_45GzxF8M3B3ppYPTCFcTxOxogAt_g2ziUWIf1OQ4oN_Qq_p0jz0aff-x6PcY4tomozEBpto4xsoXYRg1s0LVeTxiieRkQWACubQDKHbRMlw8GAGP7bY2ylEew4BCnWfpVp-vmlMxoe55lO94didGNRZrHe2gf0qcuZTb5ZuwgEavL7FbTcG-KWidz4DerL2TZuIrLiEG5HUyZt0uMlAxPkB59S49X1VS2orqtu6S_NGsPujYnwAsAdnDRs3MsIi6VBI"}
+Rendered home/callback.html.erb within layouts/home (16.1ms)
+Completed 500 Internal Server Error in 10858ms
+
+ActionView::Template::Error (undefined local variable or method `signed_request' for #<#<Class:0x007f6dd01c4f90>:0x007f6dd05f8418>):
+    4: <% @graph_data.each do |status| %>
+    5: <%= status["message"] %> (<i><%=status["updated_time"]%></i>)<hr>
+    6: <%= status.inspect %> <hr>
+    7: <%= signed_request.inspect %> <hr>
+    8: <% end %>
+    9: </ul>
+  app/views/home/callback.html.erb:7:in `block in _app_views_home_callback_html_erb__3089185766042100938_70054811309620'
+  app/views/home/callback.html.erb:4:in `each'
+  app/views/home/callback.html.erb:4:in `_app_views_home_callback_html_erb__3089185766042100938_70054811309620'
+
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:51:42 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.3ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQCq9VBcVX0QLInSot5JbgC4_KuNKDJzZpV6lR8VSIwMjl20f26zz3RsXJCwHeiMHJYUXnWyhTeot8D-W_njYjhuyO8ct1-9-1Oasv3aUqo3858AAyU-0F6_m37jhS5PTbT2unQ3KiMk2yb6QiwukLxUwF6cqkwr5ES4AQpm4wgxAwcOUCTEuj3JuVh0jsLrLUU_qo5-X-jdNtAkRTtN_WaIQrDnRWdrGU_nVbwcRFP1ME_jh7CngzKt-jjsw4i4iJf-YmmyxsC8nFIaevNsmyAjb1G2pWVwlZApfTzi3AGOEKHTQogdK3Fsxpq11qdLnPU" for 127.0.0.1 at 2013-12-09 13:51:43 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQCq9VBcVX0QLInSot5JbgC4_KuNKDJzZpV6lR8VSIwMjl20f26zz3RsXJCwHeiMHJYUXnWyhTeot8D-W_njYjhuyO8ct1-9-1Oasv3aUqo3858AAyU-0F6_m37jhS5PTbT2unQ3KiMk2yb6QiwukLxUwF6cqkwr5ES4AQpm4wgxAwcOUCTEuj3JuVh0jsLrLUU_qo5-X-jdNtAkRTtN_WaIQrDnRWdrGU_nVbwcRFP1ME_jh7CngzKt-jjsw4i4iJf-YmmyxsC8nFIaevNsmyAjb1G2pWVwlZApfTzi3AGOEKHTQogdK3Fsxpq11qdLnPU"}
+Rendered home/callback.html.erb within layouts/home (1.7ms)
+Completed 200 OK in 20623ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:57:01 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.3ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQAydZacxg-UfiEIWemPNUjyg4cQlSya2b55WWwqIkqFUbNhkj-NzLdnUVe1ADtqukmeq3cJVkhRVUz_b0-xw34nssYDlTz6RP89NWZHARu8a1UM7-lkala_wioiTNkOoG9WiVw_zK0-3wak8yuzuNb2OhmbWaa-sNnzXbLUEKiIpWyEjMex46wpPLQaC9Ua0GKwPjaly6U51NDMXWki2jLY9k2TH3ZoKhOvxjOFsSldQe6RD2FlHxKA8V_nYPZIh_HsYbEriigLAO1uwTjXIrflh9JfD00vTZdktOTbldGN3aoAJwqDtjRVVXzpkkPsels" for 127.0.0.1 at 2013-12-09 13:57:06 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQAydZacxg-UfiEIWemPNUjyg4cQlSya2b55WWwqIkqFUbNhkj-NzLdnUVe1ADtqukmeq3cJVkhRVUz_b0-xw34nssYDlTz6RP89NWZHARu8a1UM7-lkala_wioiTNkOoG9WiVw_zK0-3wak8yuzuNb2OhmbWaa-sNnzXbLUEKiIpWyEjMex46wpPLQaC9Ua0GKwPjaly6U51NDMXWki2jLY9k2TH3ZoKhOvxjOFsSldQe6RD2FlHxKA8V_nYPZIh_HsYbEriigLAO1uwTjXIrflh9JfD00vTZdktOTbldGN3aoAJwqDtjRVVXzpkkPsels"}
+Rendered home/callback.html.erb within layouts/home (1.6ms)
+Completed 500 Internal Server Error in 23451ms
+
+ActionView::Template::Error (undefined method `parse_signed_request' for #<Koala::Facebook::API:0x0000000335d5d8>):
+    1: <%= @api.parse_signed_request %>
+    2: 
+    3: Looping through your statuses:<br />
+    4: <ul>
+  app/views/home/callback.html.erb:1:in `_app_views_home_callback_html_erb__3089185766042100938_34018980'
+
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 13:57:46 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.3ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQCTweV9QwlCMTymBqCjtZnHpoUvP6ACQ_uftRXirUSXkF0UygDXL7YreL77damYty6V3tmmgiAwVGoHPCaVC4NpmTz0S6bL8xBK-S9QYkmQSLYD7qwZGKmscB_QPrLZ1QtV6g5GmYBV7x17BdexPMGDljcT4IXmbDifb7gfpC0rl8SQtU0G3MorVN2Kln7xMIgGX-9pl1Yuiz4q5noIt06o_IsMuQK-a6vZuw580efX6cAJTSUCi8f94euV2E6qjE98YvgZXUN7HgbGbd8zBCmPoKNmoV_puONTa5GLo_cU9h60vkXh64fdByrLtFzPvok" for 127.0.0.1 at 2013-12-09 13:57:49 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQCTweV9QwlCMTymBqCjtZnHpoUvP6ACQ_uftRXirUSXkF0UygDXL7YreL77damYty6V3tmmgiAwVGoHPCaVC4NpmTz0S6bL8xBK-S9QYkmQSLYD7qwZGKmscB_QPrLZ1QtV6g5GmYBV7x17BdexPMGDljcT4IXmbDifb7gfpC0rl8SQtU0G3MorVN2Kln7xMIgGX-9pl1Yuiz4q5noIt06o_IsMuQK-a6vZuw580efX6cAJTSUCi8f94euV2E6qjE98YvgZXUN7HgbGbd8zBCmPoKNmoV_puONTa5GLo_cU9h60vkXh64fdByrLtFzPvok"}
+Rendered home/callback.html.erb within layouts/home (1.5ms)
+Completed 500 Internal Server Error in 10410ms
+
+ActionView::Template::Error (undefined method `get_signed_request' for #<Koala::Facebook::API:0x007f6dd0d0e6f8>):
+    1: <%= @api.get_signed_request %>
+    2: 
+    3: Looping through your statuses:<br />
+    4: <ul>
+  app/views/home/callback.html.erb:1:in `_app_views_home_callback_html_erb__3089185766042100938_70054775520940'
+
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /var/lib/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-09 14:06:26 +0000
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/home (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?code=AQAHUEEAODGNDtSttyfHgtIxqG7NOhC8O7kkJAAe5IiPVuUjS9wP6wXEcZ_1XlkX-NkzqfGcBR8VE_-8imVnHsY0gHaDir49VJ1q6oI7VoeQotvmZ8Q-ZISNI-Us0HVvf-iw7o_6mghbpYO0UKjCP_uAORGgEGO2MmU8dGXeeKA4GBSPrlikpqN4eARjmCHCE0qY5Vkcq_R0uia_Y2kTZ2Hus2pJRfZ8buWCyFXFeKG2swHOSQOxYMW2yJlSLZ9OW5qW22Isbm-JNtLiqQs_sVTOINib06lPizf6roTfL1EcjA1ELyyuquyKGs_3qatKz5o" for 127.0.0.1 at 2013-12-09 14:06:33 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"AQAHUEEAODGNDtSttyfHgtIxqG7NOhC8O7kkJAAe5IiPVuUjS9wP6wXEcZ_1XlkX-NkzqfGcBR8VE_-8imVnHsY0gHaDir49VJ1q6oI7VoeQotvmZ8Q-ZISNI-Us0HVvf-iw7o_6mghbpYO0UKjCP_uAORGgEGO2MmU8dGXeeKA4GBSPrlikpqN4eARjmCHCE0qY5Vkcq_R0uia_Y2kTZ2Hus2pJRfZ8buWCyFXFeKG2swHOSQOxYMW2yJlSLZ9OW5qW22Isbm-JNtLiqQs_sVTOINib06lPizf6roTfL1EcjA1ELyyuquyKGs_3qatKz5o"}
+Rendered home/callback.html.erb within layouts/home (1.1ms)
+Completed 200 OK in 20492ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/callback?tabs_added%5B370461163037508%5D=1" for 127.0.0.1 at 2013-12-09 14:07:11 +0000
+  Processing by HomeController#callback as HTML
+  Parameters: {"tabs_added"=>{"370461163037508"=>"1"}}
+Rendered home/callback.html.erb within layouts/home (0.2ms)
+Completed 200 OK in 5301ms (Views: 32.6ms | ActiveRecord: 0.0ms)
