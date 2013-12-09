@@ -25,10 +25,10 @@ class HomeController < ActionController::Base
 		 # auth established, now do a graph call:
 		  
 		@api = Koala::Facebook::API.new(session[:access_token])
-		@graph = @api.get_object("me")
-		@graph2 = @api.get_object("me", "friends")
 		begin
 			@graph_data = @api.get_object("/me/statuses", "fields"=>"message")
+			@graph = @api.get_object("me")
+			@graph2 = @api.get_object("me", "friends")
 		rescue Exception=>ex
 			puts ex.message
 		end
